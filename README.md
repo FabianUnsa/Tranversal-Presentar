@@ -1,2 +1,2 @@
 # Tranversal-Presentar
-Toeria2
+Teoria_2
