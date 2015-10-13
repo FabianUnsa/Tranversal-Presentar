@@ -5,7 +5,9 @@ Gramatica de Conjunto en EBNF
 
 <entrada> -> { <sentencia> ';' }
 
-<sentencia> -> <asignacion> | <impersion>
+<sentencia> -> <asignacion> | <impersion> |<Comp_Per_Bool>
+
+<Comp_Per_Bool>-> <exprecion>
 
 <asignacion> -> <id> '=' <conjunto> | <id> '=' <operacion>
 
@@ -34,7 +36,7 @@ Gramatica de Conjunto en EBNF
 
 <diferencia> -> <conjunto> '-' <conjunto> | <id> '-' <id>
 
-<interseccion> -> <conjunto> '/' <conjunto> | <id> '/' <id>
+<interseccion> -> <conjunto> '/' <conjunto> | <id> '*' <id>
 
 <union> -> <conjunto> '+' <conjunto> | <id> '+' <id>
 
